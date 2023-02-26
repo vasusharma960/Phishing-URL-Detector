@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translate3d(0,40px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+html{
+    height: 100%;
+    background-image: url("../public/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Noto Sans Symbols 2', sans-serif;
+    animation: transitionIn 2s;
+}
